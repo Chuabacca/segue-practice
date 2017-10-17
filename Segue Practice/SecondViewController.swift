@@ -15,6 +15,7 @@ protocol SecondViewControllerDelegate {
 class SecondViewController: UIViewController {
 
     var textPassed: String?
+    var delegate: SecondViewControllerDelegate?
 
     @IBOutlet weak var secondLabel: UILabel!
     @IBOutlet weak var secondTextField: UITextField!
