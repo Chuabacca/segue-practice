@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SecondViewControllerDelegate {
 
     @IBOutlet weak var firstLabel: UILabel!
     @IBOutlet weak var firstTextField: UITextField!
@@ -31,7 +31,12 @@ class ViewController: UIViewController {
         if segue.identifier == "segueForward" {
             let secondView = segue.destination as! SecondViewController
             secondView.textPassed = firstTextField.text
+            secondView.delegate = self
         }
+    }
+
+    func opperateOnData(data: String) {
+        firstLabel.text = data
     }
 
 }
