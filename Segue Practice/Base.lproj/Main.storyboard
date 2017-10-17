@@ -121,7 +121,7 @@
                         <viewLayoutGuide key="safeArea" id="khR-1b-DOl"/>
                     </view>
                     <connections>
-                        <outlet property="secondLabel" destination="Cvt-0L-U3f" id="nIP-bF-BXO"/>
+                        <outlet property="secondLabel" destination="nG6-PI-hKm" id="8pn-VT-eC2"/>
                         <outlet property="secondTextField" destination="Cvt-0L-U3f" id="CUY-F9-6ry"/>
                     </connections>
                 </viewController>
