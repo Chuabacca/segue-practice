@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol SecondViewControllerDelegate {
+    func opperateOnData(data: String)
+}
+
 class SecondViewController: UIViewController {
 
     var textPassed: String?
