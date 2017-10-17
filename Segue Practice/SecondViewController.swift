@@ -33,6 +33,9 @@ class SecondViewController: UIViewController {
     }
 
     @IBAction func backToFirstView(_ sender: Any) {
+        let textEntered = secondTextField.text!
+        delegate?.opperateOnData(data: textEntered)
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
